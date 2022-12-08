@@ -39,6 +39,8 @@ dependencies:
   firebase_core:
   firebase_database:
   provider:
+  path:
+  carousel_slider: ^4.1.1
 
 
 dev_dependencies:

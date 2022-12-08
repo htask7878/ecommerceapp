@@ -13,9 +13,11 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   Screen() async {
     await Future.delayed(Duration(seconds: 3));
-    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
-      return Home();
-    },));
+    Navigator.pushReplacement(context, MaterialPageRoute(
+      builder: (context) {
+        return Home();
+      },
+    ));
   }
 
   @override
@@ -28,8 +30,7 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-          child: Expanded(
-              child: ColoredBox(
+          child: ColoredBox(
         color: Model.orange,
         child: Center(
             child: Column(
@@ -49,7 +50,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 )),
           ],
         )),
-      ))),
+      )),
     );
   }
 }

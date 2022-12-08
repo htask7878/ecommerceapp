@@ -9,6 +9,8 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   runApp(MaterialApp(
+    theme: ThemeData(
+        appBarTheme: AppBarTheme(color: Colors.white),),
     home: ChangeNotifierProvider(
         create: (context) => Model(), child: SplashScreen()),
   ));
