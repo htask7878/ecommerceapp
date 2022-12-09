@@ -64,6 +64,7 @@ class _HomeState extends State<Home> {
               color: Colors.white,
               width: double.infinity,
             ),
+
           ],
         ),
       ),
