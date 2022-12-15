@@ -11,7 +11,6 @@ void main() async {
   runApp(MaterialApp(
     theme: ThemeData(
         appBarTheme: AppBarTheme(color: Colors.white),),
-    home: ChangeNotifierProvider(
-        create: (context) => Model(), child: SplashScreen()),
+    home: SplashScreen(),
   ));
 }

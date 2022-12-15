@@ -5,6 +5,6 @@ import 'package:flutter/material.dart';
 
 
 
-class Model extends ChangeNotifier {
+class Model{
   static Color orange = Color(0xfff7753b);
 }
