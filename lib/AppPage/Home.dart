@@ -29,15 +29,13 @@ class _HomeState extends State<Home> {
     return pl;
   }
 
-
-
   @override
   Widget build(BuildContext context) {
-    double statusbar = MediaQuery.of(context).padding.top;
+    double statusBar = MediaQuery.of(context).padding.top;
 
     return Scaffold(
       body: Container(
-        margin: EdgeInsets.only(top: statusbar),
+        margin: EdgeInsets.only(top: statusBar),
         child: FutureBuilder(
           future: getData(),
           builder: (context, snapshot) {
